@@ -39,12 +39,10 @@ function protocol_supports_field(string $protocol, string $field): bool {
 		'arma3' 		=> ['hostname', 'ip_port', 'num_players', 'max_players', 'map', 'prive_public', 'anti_cheat', 'serveur_os', 'difficulte', 'version', 'protocol'],	// Protocol Arma 3
         // Partie serveur vocaux
 		'discord' => [
-			'guild_name',              		// Nom du serveur Discord
-			'guild_id',                		// ID unique du serveur Discord
+			'hostname',              		// Nom du serveur Discord
 			'vanity_url_code',         		// Code Vanity (code invite)
-			'description',             		// Description du serveur
-			'approx_member_count',     		// Nombre approximatif de membres
-			'approx_presence_count',   		// Membres en ligne approximativement
+			'max_players',     				// Nombre approximatif de membres
+			'num_players',   				// Membres en ligne approximativement
 			'premium_subscription_count', 	// Nombre d'abonnements Nitro
 			'nsfw',                    		// Booléen NSFW
 			'features',                		// Liste des fonctionnalités du serveur (array)
