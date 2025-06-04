@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "developpeur": "Guillaume RAYMOND",
+    "email": "hooxie@live.fr",
+    "discord": ".slymer",
+    "build": "Alpha",
+    "framework": "Sur-mesure",
+    "technos": ["PHP8/PDO", "HTML5/CSS3/jQuery", "Bootstrap"]
+  },
+  "versions": [
+    {
+      "1.0.1": {
+        "date": "2025-06-03",
+		"changes": [
+			"Added dynamic Discord form handling: hides ports and RCON, updates label and placeholder for invitation code, responsive layout adjustments.",
+			"Added Teamspeak3 Query",
+			"Added Arma3 Query",
+			"Added Counter-Strike 2 Query",
+			"Added user management",
+			"Added changelog page",
+			"Fixed bugs in login",
+			"Optimized game thumbnails (128x128) and map previews (max 720p), reducing total image size from 47.9 MB to 13.9 MB"
+		]
+      },
+      "1.0.0": {
+        "date": "2025-05-31",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    }
+  ]
+}
