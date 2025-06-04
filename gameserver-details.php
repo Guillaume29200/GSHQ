@@ -82,16 +82,35 @@ include __DIR__ . '/GSHQ/Controllers/GSHQ-MapViewers.php';
 							<!-- Colonne droite : Détails -->
 							<div class="col-md-7">
 								<div class="row">
+									<!-- Partie Discord -->
+									<?php if (protocol_supports_field($viewer_data['protocol'] ?? '', 'hostname')): ?>
+										<div class="col-md-6 mb-2">
+											<strong>🏷️ Discord Name :</strong> <?= htmlspecialchars($viewer_data['hostname'] ?? 'Pas de réponse') ?>
+										</div>
+									<?php endif; ?>	
+									<?php if (protocol_supports_field($viewer_data['protocol'] ?? '', 'vanity_url_code')): ?>
+										<div class="col-md-6 mb-2">
+											<strong>🔗 Join Community :</strong> <a href="https://discord.gg/<?= htmlspecialchars($viewer_data['vanity_url_code'] ?? '') ?>" target="_blank" rel="noopener noreferrer">Join the Discord</a>
+										</div>
+									<?php endif; ?>									
+									<!-- Partie Jeux-Vidéos -->
+									<?php if (protocol_supports_field($viewer_data['protocol'] ?? '', 'hostname')): ?>
+										<div class="col-md-6 mb-2">
+											<strong>🖥️ Hostname :</strong> <?= htmlspecialchars($viewer_data['hostname'] ?? 'Pas de réponse') ?>
+										</div>
+									<?php endif; ?>								
 
 									<?php if (protocol_supports_field($viewer_data['protocol'] ?? '', 'hostname')): ?>
 										<div class="col-md-6 mb-2">
 											<strong>🖥️ Hostname :</strong> <?= htmlspecialchars($viewer_data['hostname'] ?? 'Pas de réponse') ?>
 										</div>
 									<?php endif; ?>
+									
+									<?php if (protocol_supports_field($viewer_data['protocol'] ?? '', 'adress_ip')): ?>
 										<div class="col-md-6 mb-2">
 											<strong>🖥️ IP adress :</strong> <?= htmlspecialchars($server['adress_ip']) ?>:<?= htmlspecialchars($server['c_port']) ?>
 										</div>									
-
+									<?php endif; ?>
 									<?php if (protocol_supports_field($viewer_data['protocol'] ?? '', 'map')): ?>
 										<div class="col-md-6 mb-2">
 											<strong>🗺️ Map :</strong> <?= htmlspecialchars($viewer_data['map'] ?? '-') ?>
