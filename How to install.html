@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Guide d'installation - GSHQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            margin-top: 0.5em;
+            padding-left: 1.5em;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .lang-title {
+            margin-top: 60px;
+            font-size: 1.2em;
+            color: #888;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        code {
+            background: #eef2f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GSHQ – Guide d'installation</h1>
+
+        <div class="section">
+            <h2>🇫🇷 Version Française</h2>
+            <p>Pour installer <strong>GSHQ</strong>, suivez les étapes suivantes :</p>
+            <ul>
+                <li>Ouvrez le fichier <code>config.php</code> situé dans le dossier <code>/admin/Configuration/</code>.</li>
+                <li>Remplissez toutes les informations de configuration nécessaires.</li>
+                <li>Une fois cela fait, importez le fichier <code>database.sql</code> (présent à la racine du projet GSHQ) dans votre base de données via <strong>phpMyAdmin</strong>.</li>
+            </ul>
+
+            <h3>📁 Images des jeux</h3>
+            <ul>
+                <li>Les images des jeux se trouvent dans <code>/GSHQ/uploads/games/</code>.</li>
+                <li>Chaque image doit porter le nom exact du jeu (ex : <code>cs16.png</code> pour Counter-Strike 1.6).</li>
+                <li>Le format des images doit être <strong>PNG</strong>.</li>
+            </ul>
+
+            <h3>🗺️ Images des maps</h3>
+            <ul>
+                <li>Ajoutez les fichiers dans le dossier <code>/GSHQ/uploads/map/</code>.</li>
+                <li>Les maps doivent être au format <strong>JPG</strong> et porter le nom de la map.</li>
+            </ul>
+        </div>
+
+        <div class="section lang-title">🇬🇧 English Version</div>
+
+        <div class="section">
+            <h2>GSHQ – Installation Guide</h2>
+            <p>To install <strong>GSHQ</strong>, follow these steps:</p>
+            <ul>
+                <li>Open the <code>config.php</code> file located in the <code>/admin/Configuration/</code> directory.</li>
+                <li>Fill in all the required configuration details.</li>
+                <li>Once done, import the <code>database.sql</code> file (located at the root of the GSHQ directory) into your <strong>phpMyAdmin</strong> database.</li>
+            </ul>
+
+            <h3>📁 Game Images</h3>
+            <ul>
+                <li>Game images are stored in <code>/GSHQ/uploads/games/</code>.</li>
+                <li>Each image must be named after the game (e.g., <code>cs16.png</code> for Counter-Strike 1.6).</li>
+                <li>All images must be in <strong>PNG format</strong>.</li>
+            </ul>
+
+            <h3>🗺️ Map Images</h3>
+            <ul>
+                <li>Add your map files into the <code>/GSHQ/uploads/map/</code> directory.</li>
+                <li>Map images must be in <strong>JPG format</strong> and named after the map.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
