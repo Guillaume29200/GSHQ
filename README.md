@@ -13,6 +13,13 @@ It is built as a modern alternative to the outdated LGSL (Live Game Server List)
 - Built-in user management and changelog system
 - Designed for seamless integration with GameServer Hub
 
+About LGSL and GSHQ
+I want to acknowledge the remarkable work of tltneon, the creator of LGSL, who laid the foundation for a very useful tool for the community over many years.
+GSHQ is not a rejection or criticism of LGSL, but an attempt to offer a modern, lightweight solution adapted to today’s technologies such as REST APIs.
+Every tool has its own approach, and GSHQ simply aims to provide an updated alternative for modern panels and CMS.
+
+----------------------------------------------------------------------------------------
+
 FRANÇAIS :
 
 GameServer Hub Query (GSHQ) est un module PHP léger et extensible permettant de récupérer en temps réel les informations de vos serveurs de jeux (joueurs, carte, statut, etc.) sans RCON. Compatible avec de nombreux jeux (Source, CS2, Arma 3, Teamspeak 3, etc.), GSHQ propose une structure propre, un affichage responsive, et s'intègre facilement à tout panel ou CMS.
@@ -28,35 +35,37 @@ Il a été conçu comme une alternative moderne à LGSL (Live Game Server List),
 - Gestion des utilisateurs et changelog intégré
 - Développé pour une intégration parfaite avec GameServer Hub
 
+A propos de LGSL et GSHQ
+Je tiens à souligner le travail remarquable de tltneon, le créateur de LGSL, qui a posé les bases d’un outil très utile pour la communauté pendant de nombreuses années.
+GSHQ n’est pas un rejet ou une critique de LGSL, mais une tentative de proposer une solution moderne, plus légère, et adaptée aux technologies actuelles comme les API REST.
+Chaque outil a sa méthode propre, et GSHQ souhaite simplement offrir une alternative mise à jour pour les panels et CMS modernes.
+
 ----------------------------------------------------------------------------------------
 
-⚠️ Important Notice About Palworld
-GSH Integration Status: Temporarily Disabled I’ve spent several days trying to properly integrate Palworld into GameServer Hub (GSH), aiming for the same level of support provided for all other games.
-My goal was simple: allow basic server information to be displayed (hostname, number of online players, etc.) for real-time monitoring — just like most multiplayer games do.
-Unfortunately, nothing works as of today.
+⚠️ Important Notice About Palworld — Integration Status Temporarily Disabled
+I spent several days trying to properly integrate Palworld into GameServer Hub (GSH), aiming for the same support level as other games. My goal was simple: display basic server info (hostname, player count, etc.) for real-time monitoring, like most multiplayer games. Unfortunately, nothing works as of now.
 
-Why: 
+Why:
 
-- Their official wiki is incomplete, confusing, and in some cases unusable.
-- The former RCON interface has been removed without offering a stable replacement.
-- The new REST API, despite being officially announced, is:
-- Poorly documented, labeled as “experimental”,
-- Has no clear instructions for activation,
-- And most importantly, is non-functional in its current state (no port open, no network response, not even locally — logs are silent).
+- Their official wiki is incomplete, confusing, and often unusable.
+- The former RCON interface was removed without a stable replacement.
+- The new REST API, although officially announced, is:
+- Poorly documented and labeled “experimental,”
+- Has no clear activation instructions,
+- And most importantly, is currently non-functional (no open ports, no network response even locally, silent logs).
 
-Not a lack of skill or effort :
+Not a lack of skill or effort:
 
-I’ve tried everything on the server side: configuration, networking, SSH debugging, cURL, local and remote testing.
-But we can’t build anything serious when the developers provide no usable tools for community server admins.
+I tried everything server-side: config, network, SSH debugging, cURL, local & remote tests. But it’s impossible to build anything reliable without usable tools from the developers.
 
-Recommendation :
+Recommendation:
 
-Until Palworld developers provide a fully functional and properly documented API, I do not recommend integrating Palworld into GSH.
-If things improve in the future, I’ll update this integration accordingly with full support.
+Until Palworld developers provide a fully functional, well-documented API, I do not recommend integrating Palworld into GSH. If this improves, I will update the integration accordingly.
 
-Final Word :
+Final word:
 
-To those who, like me, are trying to build reliable tools despite these technical limitations — stay strong.
+To those trying to build reliable tools despite these limitations — stay strong.
 
+N/B:
 
-
+Each query tool uses its own approach. LGSL7 supports Palworld via a legacy method that works for them. GSHQ aims for a modern, clean approach based on REST APIs. Unfortunately, Palworld’s REST API is currently non-functional and poorly documented, making support impossible for GSHQ. This is a technical limitation of Palworld, not GSHQ.
