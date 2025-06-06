@@ -27,3 +27,36 @@ Il a été conçu comme une alternative moderne à LGSL (Live Game Server List),
 - Aperçus optimisés (icônes, maps)
 - Gestion des utilisateurs et changelog intégré
 - Développé pour une intégration parfaite avec GameServer Hub
+
+----------------------------------------------------------------------------------------
+
+⚠️ Important Notice About Palworld
+GSH Integration Status: Temporarily Disabled I’ve spent several days trying to properly integrate Palworld into GameServer Hub (GSH), aiming for the same level of support provided for all other games.
+My goal was simple: allow basic server information to be displayed (hostname, number of online players, etc.) for real-time monitoring — just like most multiplayer games do.
+Unfortunately, nothing works as of today.
+
+Why: 
+
+- Their official wiki is incomplete, confusing, and in some cases unusable.
+- The former RCON interface has been removed without offering a stable replacement.
+- The new REST API, despite being officially announced, is:
+- Poorly documented, labeled as “experimental”,
+- Has no clear instructions for activation,
+- And most importantly, is non-functional in its current state (no port open, no network response, not even locally — logs are silent).
+
+Not a lack of skill or effort :
+
+I’ve tried everything on the server side: configuration, networking, SSH debugging, cURL, local and remote testing.
+But we can’t build anything serious when the developers provide no usable tools for community server admins.
+
+Recommendation :
+
+Until Palworld developers provide a fully functional and properly documented API, I do not recommend integrating Palworld into GSH.
+If things improve in the future, I’ll update this integration accordingly with full support.
+
+Final Word :
+
+To those who, like me, are trying to build reliable tools despite these technical limitations — stay strong.
+
+
+
