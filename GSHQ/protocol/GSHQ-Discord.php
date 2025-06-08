@@ -58,9 +58,9 @@ function GSHQ_discord_engine(array $server, array $viewer_data): array {
         $channels = [];
         foreach ($guild['welcome_screen']['welcome_channels'] as $ch) {
             $channels[] = [
-                'channel_id' => $ch['channel_id'] ?? '',
-                'description' => $ch['description'] ?? '',
-                'emoji_name' => $ch['emoji_name'] ?? '',
+                'channel_id' 	=> $ch['channel_id'] ?? '',
+                'description' 	=> $ch['description'] ?? '',
+                'emoji_name' 	=> $ch['emoji_name'] ?? '',
             ];
         }
         $viewer_data['welcome_channels'] = $channels;

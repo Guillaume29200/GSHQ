@@ -100,7 +100,7 @@ function GSHQ_7dtd_engine(array $server, array $viewer_data): array {
     $viewer_data['prive_public']          = $visibility;
     $viewer_data['vac']                   = $vac;
     $viewer_data['steam_app_id']          = $id;
-    $viewer_data['protocol']              = $protocol;
+	$viewer_data['protocol']              = $protocol;
     $viewer_data['online']                = true;
 
     // Formatage humain

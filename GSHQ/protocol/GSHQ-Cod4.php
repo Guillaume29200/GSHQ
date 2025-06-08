@@ -1,15 +1,15 @@
 <?php 
 // Protocol Quake III Engine (id Tech 3)
-// Compatible avec : Medal of honor Débarquement allié
-// Version : alpha 1.2
-// Date : 01/06/2025
+// Compatible avec : Call of duty 4 Modern Warfare / Cod4X
+// Version : alpha 1.0
+// Date : 06/06/2025
 // https://gameserver-hub.com/
 // https://esport-cms.net
 // Auteur : Slymer
 // Discord : .slymer
 // Email : hooxie@live.fr
 
-function GSHQ_mohaa_engine(array $server, array $viewer_data): array {
+function GSHQ_cod4_engine(array $server, array $viewer_data): array {
     $ip = $server['adresse_ip'] ?? '';
     if (!$ip) {
         error_log("GSHQ_mohaa_engine: adresse_ip manquante");
@@ -107,14 +107,24 @@ function GSHQ_mohaa_engine(array $server, array $viewer_data): array {
     // Champs spécifiques MOHAA (id Tech 3)
     $viewer_data['game_type']     = $server_vars['g_gametype'] ?? null;
     $viewer_data['mod_game']      = $server_vars['gamename'] ?? ($server_vars['fs_game'] ?? null);
-    $viewer_data['version']       = $server_vars['version'] ?? null;
+
+    // Détection simplifiée OS serveur (linux / windows)
+    $version = strtolower($server_vars['version'] ?? '');
+    if (strpos($version, 'linux') !== false) {
+        $viewer_data['serveur_os'] = '🐧 linux';
+    } elseif (strpos($version, 'windows') !== false) {
+        $viewer_data['serveur_os'] = '🪟 windows';
+    } else {
+        $viewer_data['serveur_os'] = '❓ unknown';
+    }
+
     $viewer_data['prive_public']  = isset($server_vars['g_needpass']) ? ($server_vars['g_needpass'] === '1') : null;
     $viewer_data['pure_server']   = isset($server_vars['sv_pure']) ? ($server_vars['sv_pure'] === '1') : null;
     $viewer_data['friendly_fire'] = isset($server_vars['g_friendlyfire']) ? ($server_vars['g_friendlyfire'] === '1') : null;
     $viewer_data['timelimit']     = isset($server_vars['timelimit']) ? (int)$server_vars['timelimit'] : null;
     $viewer_data['fraglimit']     = isset($server_vars['fraglimit']) ? (int)$server_vars['fraglimit'] : null;
-	$viewer_data['players_list']  = count($players) > 0;
-    $viewer_data['protocol']      = 'quake3';
+    $viewer_data['players_list']  = count($players) > 0;
+    $viewer_data['protocol']      = 'cod4';
 
     return $viewer_data;
 }
