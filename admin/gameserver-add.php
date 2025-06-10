@@ -103,16 +103,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['form1'])) {
 														<option value="arma3" <?php if($games=='arma3') {echo 'selected';} ?>>Arma 3</option>
 														<option value="ase" <?php if($games=='ase') {echo 'selected';} ?>>ARK Survival Evolved</option>
 														<option value="bl" <?php if($games=='bl') {echo 'selected';} ?>>Battalion Legacy</option>
+														<option value="beammp" <?php if($games=='beammp') {echo 'selected';} ?>>BeamMP</option>
 														<option value="bms" <?php if($games=='bms') {echo 'selected';} ?>>Black Mesa</option>									
 														<option value="fof" <?php if($games=='fof') {echo 'selected';} ?>>Fistful of Frags</option>
+														<option value="fivem" <?php if($games=='fivem') {echo 'selected';} ?>>FiveM</option>
 														<option value="insurgency" <?php if($games=='insurgency') {echo 'selected';} ?>>Insurgency</option>
+														<option value="onset" <?php if($games=='onset') {echo 'selected';} ?>>Onset</option>
 														<option value="mohaa" <?php if($games=='mohaa') {echo 'selected';} ?>>Medal of Honor : Allied assault</option>
+														<option value="mcbedrock" <?php if($games=='mcbedrock') {echo 'selected';} ?>>Minecraft Bedrock Edition</option>
 														<option value="nmrh" <?php if($games=='nmrh') {echo 'selected';} ?>>No More Room in Hell</option>
-														<option value="palworld" <?php if($games=='palworld') {echo 'selected';} ?>>Palworld</option>
 														<option value="pz" <?php if($games=='pz') {echo 'selected';} ?>>Project Zomboid</option>
 														<option value="pvkii" <?php if($games=='pvkii') {echo 'selected';} ?>>Pirates, Vikings and Knights II</option>
 														<option value="jk2" <?php if($games=='jk2') {echo 'selected';} ?>>Star Wars - Jedi Knight II</option>
-														<option value="squad" <?php if($games=='squad') {echo 'selected';} ?>>Squad</option>
+														<option value="valheim" <?php if($games=='valheim') {echo 'selected';} ?>>Valheim</option>
+														<option value="wet" <?php if($games=='wet') {echo 'selected';} ?>>Wolfenstein Enemy Territory</option>
 													</optgroup>	
 													<optgroup label="Game Protocol">
 														<option value="hl1" <?php if($games=='hl1') {echo 'selected';} ?>>Half-life 1 (GoldSRC)</option>
@@ -121,7 +125,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['form1'])) {
 													</optgroup>	
 													<optgroup label="Voice Server">
 														<option value="discord" <?php if($games=='discord') {echo 'selected';} ?>>Discord</option>
-														<option value="ts3" <?php if($games=='ts3') {echo 'selected';} ?>>Teamspeak 3</option>
 													</optgroup>								
 												</select>							
 											</div>
