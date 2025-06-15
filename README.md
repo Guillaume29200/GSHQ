@@ -1,3 +1,5 @@
+<img src="https://esport-cms.net/framework/uploads/esportcms-digital/Capture%20d'%C3%A9cran%202025-06-15%20124627.png" alt="Capture d'écran" style="max-width: 100%; height: auto;">
+
 ENGLISH :
 
 GameServer Hub Query (GSHQ) is a lightweight and extensible PHP module designed to fetch real-time game server information (players, map, status, etc.) without using RCON. Compatible with many popular games (Source engine, CS2, Arma 3, Teamspeak 3, and more), GSHQ features a clean structure, responsive layout, and easy integration with any panel or CMS.
